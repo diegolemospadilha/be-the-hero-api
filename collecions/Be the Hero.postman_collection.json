@@ -1,0 +1,28 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Be the Hero",
+		"_postman_id": "7396100d-f8db-b685-0300-b5397f050d2e",
+		"description": "Collection com as requisições disponíveis na API do projeto.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Incidents",
+			"description": "",
+			"item": [
+				{
+					"name": "Consultar todos os incidentes",
+					"request": {
+						"url": "{{host}}/incidents",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
