@@ -65,9 +65,9 @@ routes.post(
 routes.delete(
   "/incidents/:id",
   celebrate({
-    [Segments.QUERY]: Joi.object().keys({
-      id: Joi.number().required()
-    })
+    [Segments.HEADERS]: Joi.object({
+      authorization: Joi.string().required()
+    }).unknown()
   }),
   IncidentController.delete
 );
